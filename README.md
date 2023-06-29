@@ -43,15 +43,15 @@ This mode now takes into account `hasBrake` and `range`.
 In the Lua settings the follow axes are bound. You may need to choose either the +- variant of the axis in order to invert the output.
 | Axis | Description | Dir |
 | :--- | :---: | :---: |
-| `Axis0` | Roll | + |
-| `Axis1` | Pitch | + |
-| `Axis2` | Yaw | + |
-| `Axis3` | Throttle | - |
-| `Axis4` | Brake | - |
-| `Axis5` | Strafe Left/Right | ?[^1] |
-| `Axis6` | Vertical Up/Down | ?[^1] |
-| `Axis7` | Custom[^2] | ?[^1] |
-| `Axis8` | Custom[^2] | ?[^1] |
-| `Axis9` | Custom[^2] | ?[^1] |
+| `Lua Axis 0` | Roll | + |
+| `Lua Axis 1` | Pitch | + |
+| `Lua Axis 2` | Yaw | - |
+| `Lua Axis 3` | Throttle | - |
+| `Lua Axis 4` | Brake | - |
+| `Lua Axis 5` | Strafe Left/Right | ?[^1] |
+| `Lua Axis 6` | Vertical Up/Down | ?[^1] |
+| `Lua Axis 7` | Custom[^2] | ?[^1] |
+| `Lua Axis 8` | Custom[^2] | ?[^1] |
+| `Lua Axis 9` | Custom[^2] | ?[^1] |
 [^1]: No set standard direction decided yet.
 [^2]: Script specific axis.
