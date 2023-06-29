@@ -42,7 +42,7 @@ This mode now takes into account `hasBrake` and `range`.
 ## The Standard
 In the Lua settings the follow axes are bound. You may need to choose either the +- variant of the axis in order to invert the output.
 | Axis | Description | Dir |
-| :--- | :---: | :---: |
+| :---: | :---: | :---: |
 | `Lua Axis 0` | Roll | + |
 | `Lua Axis 1` | Pitch | + |
 | `Lua Axis 2` | Yaw | - |
