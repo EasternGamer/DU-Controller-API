@@ -55,3 +55,18 @@ In the Lua settings the follow axes are bound. You may need to choose either the
 | `Lua Axis 9` | Custom[^2] | ?[^1] |
 [^1]: No set standard direction decided yet.
 [^2]: Script specific axis.
+
+## Other Versions
+There are some cases where you don't need the extra weight of the API.
+Maybe you just need the standard itself, or maybe you just don't need the advanced translations done.
+Here, you will find alternative packaged versions of the API so that if you need it as small as possible.
+
+### Standard Only
+The standard only version only includes the raw inputs, it has no deadzone checking, no caching, no error input checking. It is basically as simple as it can get while assigning names to each getAxis input.
+[Here you will find the normal version.](alternatives/Controller_API_standard.lua) `1.71 KB`
+[Here you will find the minified version.](alternatives/Controller_API_mini_standard.lua) `0.83 KB`
+
+### No Brake Vector
+This version excludes only the brake vector stuff which may be very niche in use. 
+[Here you will find the normal version.](alternatives/Controller_API_no_brake_vector.lua) `5.99 KB`
+[Here you will find the minified version.](alternatives/Controller_API_mini_no_brake_vector.lua) `2.49 KB`

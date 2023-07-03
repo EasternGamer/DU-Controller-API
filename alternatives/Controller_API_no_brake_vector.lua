@@ -15,11 +15,8 @@ function Controller(hybrid, hasbrake, range)
     if range == nil then
         range = true
     end
-    local c, s = construct, system
-    local getVelocity = c.getWorldVelocity
+    local s = system
     local getAxis = s.getAxisValue
-    local getMass = c.getMass
-    local getMaxBrake = c.getMaxBrake
     local getTime = s.getArkTime
     
     local function getRawThrottle()
@@ -157,21 +154,5 @@ function Controller(hybrid, hasbrake, range)
     function t.getAxis7Input() return getGenericInput(7) end
     function t.getAxis8Input() return getGenericInput(8) end
     function t.getAxis9Input() return getGenericInput(9) end
-    
-    function t.getBrakeVectorUnpacked()
-        local velocity = getVelocity()
-        local vx,vy,vz = velocity[1],velocity[2],velocity[3]
-        local mag = (vx*vx + vy*vy + vz*vz)^0.5
-        
-        local maxAcc = getMaxBrake()/getMass()
-        local brakeInput = -t.getBrakeInput()*maxAcc
-        
-        return brakeInput*vx/mag,brakeInput*vy/mag,brakeInput*vz/mag
-    end
-    
-    function t.getBrakeVector()
-        return {t.getBrakeVectorUnpacked()}
-    end
-    
     return t
 end
