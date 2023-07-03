@@ -63,10 +63,14 @@ Here, you will find alternative packaged versions of the API so that if you need
 
 ### Standard Only
 The standard only version only includes the raw inputs, it has no deadzone checking, no caching, no error input checking. It is basically as simple as it can get while assigning names to each getAxis input.
-[Here you will find the normal version.](alternatives/Controller_API_standard.lua) `1.71 KB`
-[Here you will find the minified version.](alternatives/Controller_API_mini_standard.lua) `0.83 KB`
+
+[Here you will find the normal version](alternatives/Controller_API_standard.lua) `1.71 KB`
+
+[Here you will find the minified version](alternatives/Controller_API_mini_standard.lua) `0.83 KB`
 
 ### No Brake Vector
 This version excludes only the brake vector stuff which may be very niche in use. 
-[Here you will find the normal version.](alternatives/Controller_API_no_brake_vector.lua) `5.99 KB`
-[Here you will find the minified version.](alternatives/Controller_API_mini_no_brake_vector.lua) `2.49 KB`
+
+[Here you will find the normal version](alternatives/Controller_API_no_brake_vector.lua) `5.99 KB`
+
+[Here you will find the minified version](alternatives/Controller_API_mini_no_brake_vector.lua) `2.49 KB`
